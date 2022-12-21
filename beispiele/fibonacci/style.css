@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+html,
+body {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: center;
+}
+
+body {
+    background: url("https://www.dlr.de/schoollab/Portaldata/24/Resources/images/lernmodule/zahlenfolge/FibonacciSpiral_590x371.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#button {
+    background: rgb(255, 255, 255);
+    border: none;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+    color: black;
+    font-family: 'Lexend', sans-serif;
+}
+
+input {
+    color: rgb(0, 0, 0);
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    padding: 5px;
+    font-size: 40px;
+    background: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-align: center;
+}
+main {
+    height: 300px;
+    width: 300px;
+    background: blue;
+    margin-top: 100px;
+    padding-top: 30px;
+}
+p {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 55px;
+    color: white;
+}
+span {
+    color: white;
+}

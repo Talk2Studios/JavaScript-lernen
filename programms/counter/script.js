@@ -12,6 +12,7 @@ function save() {
         var people = document.getElementById("num").innerHTML;
         people = people + counter + "<br>";
         document.getElementById("num").innerHTML = people;
+        console.log(people)
         counter = 0;
         document.getElementById("counter-el").innerHTML = counter;
     }
