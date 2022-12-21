@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Talk2 Studios | Calulator</title>
+    <link rel="icon" href="../../assets/icon.png">
+</head>
+
+<body>
+    <header>
+        <h1>CALCULATOR</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">subjekt<img src="../../assets/dropdown.png" alt="dropdown icon" class="dropicon">
+                        </button>
+                        <div class="dropdown-content">
+                            <div class="dropcolumne">
+                              <div class="ddropdown">
+                                <a href="#simplmathe" class="ddropbtn">SIMPLE MATH</a>
+                                <div class="ddropdown-content">
+                                    <a href="#addition">addition</a>
+                                    <a href="#">substraction</a>
+                                    <a href="#">division</a>
+                                </div>
+                            </div>
+                            <div class="ddropdown">
+                                <a href="#arithmetic" class="ddropbtn">ARITHMETIC</a>
+                                <div class="ddropdown-content">
+                                    <a href="#phytagoras">phytagoras</a>
+                                    <a href="#fibonacci">fibonacci</a>
+                                    <a href="#proportionality">proportion</a>
+                                </div>
+                            </div>
+                            <div class="ddropdown">
+                                <a href="#physic" class="ddropbtn">PHYSIC</a>
+                                <div class="ddropdown-content">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>  
+                            </div>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">Chet</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="theme">
+            <h1 id="simplmathe">SIMPLE MATH</h1>
+        </article>
+        <article>
+            <h2 id="addition">addition</h2>
+            <div class="rechner">
+                <form>
+                    <h3>addition</h3>
+                    summend 1: <br><input type="text" id="summand1"><br>
+                    summend 2: <br><input type="text" id="summand2"><br>
+                    <input class="ibutton" type="button" value="Calculate summe:" onclick="addition()">
+                    <p>Summe: <span class="result" id="result5"></span></p><button class="cbutton" onclick="cr5()">Copy
+                        result</button>
+                </form>
+                <form>
+                    <h3>Info</h3>
+                    <p><strong>formel</strong><br>summand 1 + summand 2 = Summe</p>
+                </form>
+            </div>
+        </article>
+        <article class="theme">
+            <h1 id="arithmetic">ARITHMETIC</h1>
+        </article>
+        <article>
+            <h2 id="phytagoras">phytagoras</h2>
+            <div class="rechner">
+                <form>
+                    <h3>present: <br> 2 Legs</h3>
+                    Length of leg 1: <br><input type="text" id="leg1"><br>
+                    Length of leg 2: <br><input type="text" id="leg2"><br>
+                    <input class="ibutton" type="button" value="Calculate hypotenuse" onclick="hypo()">
+                    <p>Result: <span class="result" id="result1"></span></p><button class="cbutton" onclick="cr1()">Copy
+                        result</button>
+                </form>
+                <form>
+                    <h3>present: <br> 1 Leg, 1 Hypotenuse</h3>
+                    Length of leg: <br><input type="text" id="leg3"><br>
+                    Length of Hypotenuse<br><input type="text" id="hypothe"><br>
+                    <input class="ibutton" type="button" onclick="leg()" value="Calculate leg">
+                    <p>Result: <span class="result" id="result2"></span></p><button class="cbutton" onclick="cr2()">Copy
+                        result</button>
+                </form>
+                <form>
+                    <h3>
+                        Info</h3>
+                    <p><strong>0.0000<br></strong>The result is rounded to four digits. </p>
+                    <p><strong>Result = incorrect input</strong>
+                        means that either the two numbers are the same, the leg is longer than the hypotenuse or at
+                        least one of the numbers is zero.
+                    </p>
+                    <p><strong>"."<br></strong> Use a point as a decimal sign.</p>
+
+                </form>
+
+            </div>
+
+
+        </article>
+        <article>
+            <h2 id="fibonacci">fibonacci sequence</h2>
+            <div class="rechner">
+                <form>
+                    <h3>Folgen</h3>
+                    number of sequences
+                    <input type="text" id="folgen">
+                    <input class="ibutton" type="button" value="Calculate fibonacci" onclick="folge()">
+                    <p>Result: <span class="result" id="result3"></span></p>
+                    <button class="cbutton" onclick="cr3()">Copy result</button>
+                </form>
+                <form>
+                    <h3>Info</h3>
+                    <p><strong>format <br></strong>
+                        Use only whole numbers.
+                    <p><strong>formel</strong><br>f0 = 0, f1 = 1 <br>fn+2 = fn+1 + fn für alle n ⩾ 0</p>
+                    <p><strong>sequence</strong><br>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 89, 144, 233, 377, 610....</p>
+                    </p>
+
+                </form>
+            </div>
+        </article>
+
+
+
+        <article>
+            <h2 id="proportionality">proportionality</h2>
+            <div class="rechner">
+                <form>
+                    <h3>proportion</h3>
+                    <input type="text" class="propinput" id="prop1">
+                    <input type="text" class="propinput" id="prop2">
+                    <input type="text" class="propinput" id="prop3">
+                    <input type="text" class="propinput disinput" value="?" disabled>
+                    <input class="ibutton" type="button" value="Calculate proportion" onclick="proportion()">
+                    <p>Result: <span class="result" id="result4"></span></p>
+                    <button class="cbutton" onclick="cr4()">Copy result</button>
+                </form>
+                <form>
+                    <h3>Info</h3>
+                    <p><strong>needed<br></strong>All fields must have a value.</p>
+                    <p><strong>input<br></strong>The numbers in the same row have the same unit.</p>
+
+                </form>
+            </div>
+        </article>
+
+        <article class="theme">
+            <h1 id="physic">PHYSIC</h1>
+        </article>
+
+    </main>
+    <script src="script.js"></script>
+    <footer>
+        <div class="footer-l-div">
+            <div class="social">
+                <p>Social</p>
+                <a href="https://github.com/Talk2Studios/JavaScript-lernen" target="_blank"><img src="../../assets/github.png" alt="github"></a>
+                <a href="https://www.youtube.com/channel/UCoif-_aktkxpc9-vPHEKAVw" target="_blank"><img
+                        src="../../assets/youtube.png" alt="youtube"></a>
+            </div>
+            <p class="lbundig">If you have any ideas or requests <br> for other calculators, <br> please contact us
+                here. &darr;<br><br><a href="mailto:talk2.studios@gmail.com" class="mail">talk2.studios@gmail.com</a>
+            </p>
+        </div>
+
+        <p class="rbundig">&copy; 2022 Talk2 Studios<br>Webdesigne by Colin Heggli</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+
+html,
+body {
+    height: 100%;
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    color: #3e0697;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(57, 65, 68);
+}
+
+h1 {
+    color: white;
+    margin: 0;
+    padding: 20px 0px;
+    font-size: 70px;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    margin-top: 10px;
+}
+
+main {
+    width: 100%;
+    max-width: 1060px;
+    border-radius: 10px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+}
+
+article {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 30px;
+    background: rgb(156, 0, 255);
+    background: linear-gradient(90deg, rgba(156, 0, 255, 1) 0%, rgba(192, 81, 163, 1) 45%, rgba(255, 224, 0, 1) 100%);
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.theme {
+    margin-top: 60px;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    background: white;
+    background: rgb(156, 0, 255);
+    background: linear-gradient(90deg, rgba(156, 0, 255, 1) 0%, rgba(192, 81, 163, 1) 45%, rgba(255, 224, 0, 1) 100%);
+    border-radius: 0 0 10px 10px;
+}
+
+footer {
+    height: 100%;
+    max-height: 300px;
+    color: white;
+    background: rgb(45, 50, 53);
+    width: 100%;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    align-items: flex-end;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+.mail {
+    color: white;
+    text-decoration: none;
+
+}
+
+.mail:hover {
+    text-decoration: underline;
+}
+
+.footer-l-div {
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+.rbundig {
+    text-align: right;
+    margin-right: 100px;
+}
+
+.lbundig {
+    text-align: left;
+}
+
+footer img {
+    height: 30px;
+    width: auto;
+    margin: 5px 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background: rgb(45, 50, 53);
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    margin: 5px;
+
+}
+
+nav li {
+    padding: 10px 0;
+    transition: 0.3s;
+}
+
+nav li:hover {
+    background: rgb(67, 73, 78);
+}
+
+nav li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    border: solid 1px rgb(28, 31, 32);
+    border-bottom: black;
+    border-top: black;
+    padding: 5px 10px;
+}
+
+input {
+    margin-bottom: 10px;
+    margin-top: 3px;
+    font-size: 20px;
+}
+
+.propinput {
+    width: 110px;
+    margin: 4px;
+}
+
+.disinput {
+    text-align: center;
+}
+
+.result {
+    font-weight: bold;
+}
+
+.cbutton {
+    background: #3e0697;
+    border: none;
+    padding: 7.5px 20px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 15px;
+}
+
+.ibutton {
+    background: #3e0697;
+    border: none;
+    padding: 7.5px 20px;
+    margin-bottom: 10px;
+    color: white;
+    border-radius: 19px;
+}
+
+.ibutton:hover,
+.cbutton:hover {
+    background: #5d23bb;
+}
+
+.rechner {
+    display: flex;
+    flex-direction: row;
+}
+
+form {
+    background: white;
+    padding: 20px;
+    margin: 0 10px 30px 10px;
+    border-radius: 20px;
+    max-width: 300px;
+    width: 100%;
+
+}
+
+/*Dropdown*/
+/*Dropdown*/
+/*Dropdown*/
+.dropicon {
+    height: 12px;
+    width: auto;
+    padding-left: 5px;
+}
+/*Dropdown*/
+/*Dropdown*/
+/*Dropdown*/
+nav .dropdown {
+    color: rgb(255, 255, 255);
+}
+
+nav {
+    overflow: hidden;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: rgb(52, 58, 61);
+    color: rgb(255, 255, 255);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+
+    float: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background: linear-gradient(90deg, rgba(156, 0, 255, 0.3) 0%, rgba(192, 81, 163, 0.3) 45%, rgba(255, 224, 0, 0.3) 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*ddropdown*/
+/*ddropdown*/
+/*ddropdown*/
+/*ddropdown*/
+/*ddropdown*/
+/*ddropdown*/
+/*ddropdown*/
+/*ddropdown*/
+nav {
+    overflow: hidden;
+}
+
+.ddropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.ddropdown .ddropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background-color: inherit;
+    font-family: inherit;
+    font-weight: bold;
+    margin: 0;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+
+.dropcolumne {
+    display: flex;
+    flex-direction: column;
+}
+
+.ddropdown-content {
+    display: none;
+    position: absolute;
+    background: rgb(72, 80, 83);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    max-width: 160px;
+    width: 100%;
+    transition: none;
+}
+
+.ddropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.ddropdown:hover .ddropdown-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+@media screen and (max-width: 1100px) {
+    .rechner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    article {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .rechner {
+        flex-direction: row;
+    }
+
+    article {
+        width: 100%;
+        max-width: 560px;
+
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    form {
+        padding: 10px;
+        font-size: 12px;
+        margin-bottom: 20px;
+        width: 200px;
+    }
+
+    .ibutton {
+        font-size: 15px;
+        padding: 7.5px 10px;
+        border-radius: 16px;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .cbutton {
+        margin-bottom: 5px;
+    }
+
+
+    form p {
+        margin: 8px 0;
+    }
+
+    input {
+        margin-bottom: 10px;
+        margin-top: 3px;
+        font-size: 15px;
+        width: 180px;
+    }
+
+    .propinput {
+        width: 75px;
+        margin: 2px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .rbundig {
+        text-align: left;
+        margin-left: 100px;
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+    article {
+        max-width: 280px;
+        width: 100%;
+    }
+
+    h1 {
+        color: white;
+        margin: 0;
+        padding: 15px 0px;
+        font-size: 40px;
+    }
+
+    .rechner {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rbundig {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .footer-l-div {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+    }
+}
