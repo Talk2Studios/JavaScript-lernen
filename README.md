@@ -2,7 +2,8 @@
 <img src="assets/logologo.png" alt="Logo">
   
   
-<a href="www.youtube.com/channel/@talk2studios"><img src="assets/youtube.png" alt="youtube" height="30px" width="auto"></a>  
+<a href="www.youtube.com/channel/@talk2studios" target="_blank"><img src="assets/youtube.png" alt="youtube" height="30px" width="auto"></a>
+<a href="https://ogagofub.myhostpoint.ch/" target="_blank"><img src="assets/icon.png" alt="our Website" height="30px" width="auto"></a>
 </p>
 
 
