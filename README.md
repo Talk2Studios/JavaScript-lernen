@@ -1,4 +1,4 @@
-![Titelbild](assets/logologo.jpg)
+![Titelbild](assets/logologo.png)
 [Youtube](www.youtube.com/channel/@talk2studios)
 # JavaScript-lernen
 In diesem GitHub ist die gesammte Webseite hinterlegt.  
