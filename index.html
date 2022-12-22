@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <title>Talk2 Studios | Homepage</title>
     <link rel="icon" href="assets/icon.png">
+
 </head>
 
 <body>
     <header>
-        <h1>HOMEPAGE</h1>
+        <h1>Talk2 Studios</h1>
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
@@ -58,7 +59,8 @@
     </header>
 
     <main>
-        <article class="cdropdown">
+        <article class="cdropdown" id="b1" onclick="but1()">
+            <!-- input type="button" value="Links for HTML & CSS" class="dropbutton" onclick="dropdown()"> -->
             <h2>Links for HTML & CSS</h2>
             <ul>
                 <li><a href="https://validator.w3.org/#validate_by_input" target="_blank">Validator</a></li>
@@ -71,9 +73,9 @@
             </ul>
         </article>
 
-        <article class="cdropdown">
+        <article class="cdropdown" id="b2" onclick="but2()">
             <h2>
-                Example</h2>
+                Video Examples</h2>
             <ul>
                 <li><a href="beispiele/navlet/">Unterschied nav und let</a></li>
                 <li><a href="beispiele/functions/">Functions</a></li>
@@ -81,13 +83,13 @@
                 <li><a href="beispiele/fibonacci/">Fibonacci</a></li>
             </ul>
         </article>
-        <article class="cdropdown">
+        <article class="cdropdown" id="b3" onclick="but3()">
             <h2>
                 Programms</h2>
             <ul>
                 <li><a href="programms/counter/">Counter</a></li>
                 <li><a href="programms/rechner/">Calculator</a></li>
-                <li><a href="#">Links</a></li>
+                <li><a href="programms/winupdate">Windows Update</a></li>
             </ul>
         </article>
     </main>
@@ -96,9 +98,9 @@
             <div class="social">
                 <p>Social</p>
                 <a href="https://github.com/Talk2Studios/JavaScript-lernen" target="_blank"><img
-                        src="../../assets/github.png" alt="github"></a>
+                        src="assets/github.png" alt="github"></a>
                 <a href="https://www.youtube.com/channel/UCoif-_aktkxpc9-vPHEKAVw" target="_blank"><img
-                        src="../../assets/youtube.png" alt="youtube"></a>
+                        src="assets/youtube.png" alt="youtube"></a>
             </div>
             <p class="lbundig">
                 If you have any ideas or <br>suggestions on how we<br> can improve the website, <br> please contact us
@@ -107,6 +109,7 @@
         </div>
         <p class="rbundig">&copy; 2022 Talk2 Studios<br>Webdesigne by Colin Heggli</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
