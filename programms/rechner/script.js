@@ -1,15 +1,5 @@
-//Copy Button
-
-function copytoclip (tocopy) {
-    document.getElementById(tocopy)
-    // Copy the text inside the text field
-    navigator.clipboard.writeText();
-
-// Alert the copied text
-alert("Copied the text: " + copyText.value);
-}
-
-// Hypothenuse ausrechnen
+// Phytagoras --------------------------------------------------------------------------------------
+// Hypothenuse ausrechnen --------------------------------------------
 function hypo() {
     var leg1 = document.getElementById("leg1").value;
     var leg2 = document.getElementById("leg2").value;
@@ -23,8 +13,19 @@ function hypo() {
         document.getElementById("result1").innerHTML = hypotenuse;
     }
 }
+// Copy Button ------------------------
 
-// Leg ausrechnen
+function cr1() {
+    let copiedtext = document.getElementById("result1").innerText
+    navigator.clipboard.writeText(copiedtext)
+    event.preventDefault();
+    document.getElementById("cbutton1").innerText = "Copied"
+    setTimeout(chanback1, 1500)
+    }
+function chanback1() {
+    document.getElementById("cbutton1").innerText = "Copy result"
+}
+// Leg ausrechnen --------------------------------------------
 function leg() {
     var leg3 = document.getElementById("leg3").value;
     var hypo = document.getElementById("hypothe").value;
@@ -38,7 +39,19 @@ function leg() {
         document.getElementById("result2").innerHTML = "incorrect input";
     }
 }
-// Fibonachi
+// Copy Button ------------------------
+
+function cr2() {
+    let copiedtext = document.getElementById("result2").innerText
+    navigator.clipboard.writeText(copiedtext)
+    event.preventDefault();
+    document.getElementById("cbutton2").innerText = "Copied"
+    setTimeout(chanback2, 1500)
+    }
+function chanback2() {
+    document.getElementById("cbutton2").innerText = "Copy result"
+}
+// Fibonachi --------------------------------------------------------------------------------------
 function folge() {
     let fibonum = document.getElementById("folgen").value
     let folgea = 1
@@ -51,7 +64,6 @@ function folge() {
         console.log(fiboresult)
     }
     document.getElementById("result3").innerText = fiboresult
-
     /*
     function folge() {
         let fibonum = document.getElementById("folgen").value;
@@ -68,14 +80,37 @@ function folge() {
     }
     */
 }
-//proportionalität
+// Copy Button ------------------------
+function cr3() {
+    let copiedtext = document.getElementById("result3").innerText
+    navigator.clipboard.writeText(copiedtext)
+    event.preventDefault();
+    document.getElementById("cbutton3").innerText = "Copied"
+    setTimeout(chanback3, 1500)
+    }
+function chanback3() {
+    document.getElementById("cbutton3").innerText = "Copy result"
+}
+//proportionalität ---------------------------------------------------------------------------------
 function proportion() {
     let propo1 = document.getElementById("prop1").value
     let propo2 = document.getElementById("prop2").value
     let propo3 = document.getElementById("prop3").value
     document.getElementById("result4").innerText = (propo3 / propo1 * propo2)
 }
-//addition
+// Copy Button ------------------------
+
+function cr4() {
+    let copiedtext = document.getElementById("result4").innerText
+    navigator.clipboard.writeText(copiedtext)
+    event.preventDefault();
+    document.getElementById("cbutton4").innerText = "Copied"
+    setTimeout(chanback4, 1500)
+    }
+function chanback4() {
+    document.getElementById("cbutton4").innerText = "Copy result"
+}
+//addition -----------------------------------------------------------------------------------------
 function addition() {
     let sum1 = parseFloat(document.getElementById("summand1").value)
     console.log(sum1)
@@ -85,4 +120,15 @@ function addition() {
     console.log(summe)
     document.getElementById("result5").innerHTML = sum1 + sum2
 }
- //unterschied var und let
+// Copy Button ------------------------
+
+function cr5() {
+    let copiedtext = document.getElementById("result5").innerText
+    navigator.clipboard.writeText(copiedtext)
+    event.preventDefault();
+    document.getElementById("cbutton5").innerText = "Copied"
+    setTimeout(chanback5, 1500)
+    }
+function chanback5() {
+    document.getElementById("cbutton5").innerText = "Copy result"
+}

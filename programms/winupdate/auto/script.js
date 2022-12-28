@@ -1,18 +1,32 @@
 //-------------------------------------------------------------------------------- fullscreen
-/* Get the documentElement (<html>) to display the page in fullscreen */
+
+// Get the documentElement (<html>) to display the page in fullscreen 
 var elem = document.documentElement;
 
-/* View in fullscreen */
+// View in fullscreen 
 function fullscreen() {
   if (elem.requestFullscreen) {
     elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) { /* Safari */
+  } else if (elem.webkitRequestFullscreen) { // Safari 
     elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) { /* IE11 */
+  } else if (elem.msRequestFullscreen) { // IE11 
     elem.msRequestFullscreen();
   }
 }
 
+//-------------------------------------------------------------------------------- fullscreen 2
+/*function fullscreen() {
+  // Create a new keyboard event
+  var event = new KeyboardEvent('keydown', {
+    bubbles: true,
+    cancelable: true,
+    keyCode: 122
+  });
+
+  // Dispatch the event
+  document.dispatchEvent(event);
+}
+*/
 //-------------------------------------------------------------------------------- v1
 /*
 function prozent() {
@@ -74,16 +88,8 @@ var interval2 = setInterval(function () {
 */
 //-------------------------------------------------------------------------------- color chance
 function color() {
-  var element = document.getElementById("colorin").value;
-  if (element == 0) {
-    var element3 = document.getElementById("container");
-    element3.classList.toggle("invisible");
-  } else {
-    var bodybg = document.getElementById("bobg");
-    bodybg.style.backgroundColor = element;
-    var element3 = document.getElementById("container");
-    element3.classList.toggle("invisible");
-  }
+  var element3 = document.getElementById("container");
+  element3.classList.toggle("invisible");
   startup();
   fullscreen();
   cursor();
@@ -183,13 +189,13 @@ function startup() {
 */
 //-------------------------------------------------------------------------------- v7 Final
 
-// Das ist die Latenz bis zum nächsten Prozent. Die Latenz gilt bis die Prozentzahl den wer der Variable "speedchange" erreicht hat.
+// Was ist die Latenz bis zum nächsten Prozent. Die Latenz gilt bis ddie Prozentzahl den wer der Variable  erreicht hat.
 var latenz1 = 1000;
 
-// Der Latentzwert der zum berechnen der Latenz für die Prozentzahlen nach dem wert der Variable "speedchange" verwendet.
+// Der Latentzwert der zum berechnen der Latenz für die Prozentzahlen nach dem wert dder Variable "speedchange" verwendet wird.
 var latenz2 = 20000;
 
-// Wan die Latenz von latenz1 auf Latenz2 wechseln soll.
+// Wan soll die Latenz von latenz1 auf Latenz2 wechseln soll.
 var speedchange = 75;
 
 // Wan soll die Prozentzahl stehen bleiben.
@@ -215,7 +221,6 @@ function startup() {
 }
 function backin() {
   if (i == stopcount) {
-    console.log("bei " + stopcount + "% ist der stop")
   }
   else {
     i++;
@@ -228,6 +233,7 @@ function backin() {
     document.getElementById("per").innerHTML = i;
     setTimeout(backin, lat);
   }
+  console.log("bei " + stopcount + "% ist der stop")
 }
 //-------------------------------------------------------------------------------- show time
 function checkTime(l) {

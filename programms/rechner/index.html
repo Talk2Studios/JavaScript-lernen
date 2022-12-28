@@ -14,48 +14,41 @@
     <header>
         <h1>CALCULATOR</h1>
         <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
+            <ul class="navigation">
+                <li><a href="/" id="first-border">Home</a></li>
                 <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">Calculator<img src="../../assets/dropdown.png" alt="dropdown icon"
-                                class="dropicon">
-                        </button>
-                        <div class="dropdown-content">
-                            <div class="dropcolumne">
-                                <div class="ddropdown">
-                                    <a href="#simplmathe" class="ddropbtn">SIMPLE MATH</a>
-                                    <div class="ddropdown-content">
-                                        <a href="#addition">addition</a>
-                                        <a href="#">substraction</a>
-                                        <a href="#">division</a>
-                                    </div>
-                                </div>
-                                <div class="ddropdown">
-                                    <a href="#arithmetic" class="ddropbtn">ARITHMETIC</a>
-                                    <div class="ddropdown-content">
-                                        <a href="#phytagoras">phytagoras</a>
-                                        <a href="#fibonacci">fibonacci</a>
-                                        <a href="#proportionality">proportion</a>
-                                    </div>
-                                </div>
-                                <div class="ddropdown">
-                                    <a href="#physic" class="ddropbtn">PHYSIC</a>
-                                    <div class="ddropdown-content">
-                                        <a href="#">Link 1</a>
-                                        <a href="#">Link 2</a>
-                                        <a href="#">Link 3</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                  <a href="../rechner/">Calculator <img src="../../assets/dropdown.png" class="dropicon" alt="dropdownicon"></a>
+                  <ul class="submenu">
+                    <li>
+                      <a href="#simplemath">SIMPLE MATH</a>
+                      <ul class="subsubmenu">
+                        <li><a href="#addition">addition</a></li>
+                        <li><a href="#">substraction</a></li>
+                        <li><a href="#">division</a></li>
+                        <li><a href="#">multiplication</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#arithmetic">ARITMETIC</a>
+                      <ul class="subsubmenu">
+                        <li><a href="#phytagoras">phytagoras</a></li>
+                        <li><a href="#fibonacci">fibonacci</a></li>
+                        <li><a href="#proportionality">proportionality</a></li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="#physic">PHYSIC</a>
+                      <ul class="subsubmenu">
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                        <li><a href="#">link</a></li>
+                      </ul>
+                    </li>
+                  </ul>
                 </li>
-                <li><a href="#">about us</a></li>
                 <li><a href="#">Chet</a></li>
-
-            </ul>
+                <li><a href="../../aboutus/">About us</a></li>
+              </ul>
         </nav>
     </header>
 
@@ -71,7 +64,7 @@
                     summend 1: <br><input type="text" id="summand1"><br>
                     summend 2: <br><input type="text" id="summand2"><br>
                     <input class="ibutton" type="button" value="Calculate summe:" onclick="addition()">
-                    <p>Summe: <span class="result" id="result5"></span></p><button class="cbutton" onclick="cr5()">Copy
+                    <p>Summe: <span class="result" id="result5"></span></p><button class="cbutton" id="cbutton5" onclick="cr5()">Copy
                         result</button>
                 </form>
                 <form>
@@ -91,7 +84,7 @@
                     Length of leg 1: <br><input type="text" id="leg1"><br>
                     Length of leg 2: <br><input type="text" id="leg2"><br>
                     <input class="ibutton" type="button" value="Calculate hypotenuse" onclick="hypo()">
-                    <p>Result: <span class="result" id="result1"></span></p><button class="cbutton" onclick="cr1()">Copy
+                    <p>Result: <span class="result" id="result1"></span></p><button class="cbutton" id="cbutton1" id="cbutton1" onclick="cr1()">Copy
                         result</button>
                 </form>
                 <form>
@@ -99,7 +92,7 @@
                     Length of leg: <br><input type="text" id="leg3"><br>
                     Length of Hypotenuse<br><input type="text" id="hypothe"><br>
                     <input class="ibutton" type="button" onclick="leg()" value="Calculate leg">
-                    <p>Result: <span class="result" id="result2"></span></p><button class="cbutton" onclick="cr2()">Copy
+                    <p>Result: <span class="result" id="result2"></span></p><button class="cbutton" id="cbutton2" onclick="cr2()">Copy
                         result</button>
                 </form>
                 <form>
@@ -127,13 +120,13 @@
                     <input type="text" id="folgen">
                     <input class="ibutton" type="button" value="Calculate fibonacci" onclick="folge()">
                     <p>Result: <span class="result" id="result3"></span></p>
-                    <button class="cbutton" onclick="cr3()">Copy result</button>
+                    <button class="cbutton" id="cbutton3" onclick="cr3()">Copy result</button>
                 </form>
                 <form>
                     <h3>Info</h3>
                     <p><strong>format <br></strong>
                         Use only whole numbers.
-                    <p><strong>formel</strong><br>f0 = 0, f1 = 1 <br>fn+2 = fn+1 + fn für alle n ⩾ 0</p>
+                    <p><strong>formel</strong><br>f0 = 0, f1 = 1 <br>fn+2 = fn+1 + fn for all n ⩾ 0</p>
                     <p><strong>sequence</strong><br>0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 89, 144, 233, 377, 610....</p>
                     </p>
 
@@ -154,7 +147,7 @@
                     <input type="text" class="propinput disinput" value="?" disabled>
                     <input class="ibutton" type="button" value="Calculate proportion" onclick="proportion()">
                     <p>Result: <span class="result" id="result4"></span></p>
-                    <button class="cbutton" onclick="cr4()">Copy result</button>
+                    <button class="cbutton" id="cbutton4" onclick="cr4()">Copy result</button>
                 </form>
                 <form>
                     <h3>Info</h3>
@@ -175,8 +168,8 @@
         <div class="footer-l-div">
             <div class="social">
                 <p>Social</p>
-                <a href="https://github.com/Talk2Studios/JavaScript-lernen" target="_blank"><img
-                        src="../../assets/github.png" alt="github"></a>
+                <a href="https://github.com/Talk2Studios/" target="_blank"><img src="../../assets/github.png"
+                    alt="github"></a>
                 <a href="https://www.youtube.com/channel/UCoif-_aktkxpc9-vPHEKAVw" target="_blank"><img
                         src="../../assets/youtube.png" alt="youtube"></a>
             </div>

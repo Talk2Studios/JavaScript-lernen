@@ -1,19 +1,14 @@
 html,
 body {
+    /* cursor: url(http://fediafedia.com/fakeupdate.net/assets/img/gQyFbtU.png), auto;*/
     margin: 0;
     font-family: Segoe UI Light, Segoe UI, Arial;
     color: white;
     height: 100%;
 }
-
-.maus {
-    cursor: url(http://fediafedia.com/fakeupdate.net/assets/img/gQyFbtU.png), auto;
-}
-
 body {
-    background: rgb(0, 109, 174);
+    background: rgb(0, 109, 174);;
 }
-
 article {
     display: flex;
     justify-content: center;
@@ -26,7 +21,6 @@ p {
     text-align: center;
     font-size: 25px;
 }
-
 input {
     font-family: Segoe UI Light, Segoe UI, Arial;
     border: none;
@@ -36,11 +30,9 @@ input {
     background: white;
     font-weight: bold;
 }
-
 input:focus-visible {
     outline: none;
 }
-
 main {
     display: flex;
     flex-direction: column;
@@ -48,11 +40,9 @@ main {
     position: absolute;
     top: 10%;
 }
-
 .invisible {
     display: none;
 }
-
 .loader {
     position: relative;
     width: 50px;
