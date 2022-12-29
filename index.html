@@ -1,150 +1,141 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Talk2 Studios | Homepage</title>
-    <link rel="icon" href="assets/icon.png" />
-  </head>
 
-  <body>
-    <header>
-      <h1>Talk2 Studios</h1>
-      <nav>
-        <ul class="navigation">
-          <li><a href="/" id="first-border">Home</a></li>
-          <li>
-            <a href="programms/rechner/">Calculator <img src="assets/dropdown.png" class="dropicon" alt="dropdownicon"></a>
-            <ul class="submenu">
-              <li>
-                <a href="programms/rechner/#simplemath">SIMPLE MATH</a>
-                <ul class="subsubmenu">
-                  <li><a href="programms/rechner/#addition">addition</a></li>
-                  <li><a href="programms/rechner/#">substraction</a></li>
-                  <li><a href="programms/rechner/#">division</a></li>
-                  <li><a href="programms/rechner/#">multiplication</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="programms/rechner/#arithmetic">ARITMETIC</a>
-                <ul class="subsubmenu">
-                  <li><a href="programms/rechner/#phytagoras">phytagoras</a></li>
-                  <li><a href="programms/rechner/#fibonacci">fibonacci</a></li>
-                  <li><a href="programms/rechner/#proportionality">proportionality</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="programms/rechner/#physic">PHYSIC</a>
-                <ul class="subsubmenu">
-                  <li><a href="#">link</a></li>
-                  <li><a href="#">link</a></li>
-                  <li><a href="#">link</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
-          <li><a href="#">Chet</a></li>
-          <li><a href="aboutus/">About us</a></li>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Home | Talk2 Studios</title>
+  <link rel="icon" href="assets/icon.png" />
+</head>
 
-    <main>
-      <article class="video-article">
-        <h2>Our latest video</h2>
-        <div>
-          <iframe
-            src="https://www.youtube-nocookie.com/embed/mSeVTabMGEA"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </article>
-      <article class="cdropdown ch2" id="b1" onclick="but1()">
-        <!-- input type="button" value="Links for HTML & CSS" class="dropbutton" onclick="dropdown()"> -->
-        <h2>Links for HTML & CSS</h2>
-        <ul>
-          <li>
-            <a
-              href="https://validator.w3.org/#validate_by_input"
-              target="_blank"
-              >Validator</a
-            >
-          </li>
-          <li>
-            <a href="https://www.w3schools.com/" target="_blank">w3schools</a>
-          </li>
-          <li>
-            <a href="https://color.adobe.com/" target="_blank">Adobe color</a>
-          </li>
-          <li>
-            <a
-              href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
-              target="_blank"
-              >Flexbox</a
-            >
-          </li>
-          <li>
-            <a href="https://cssgradient.io/" target="_blank">css gradient</a>
-          </li>
-          <li>
-            <a href="https://chat.openai.com/chat" target="_blank">ChetGPT</a>
-          </li>
-          <li>
-            <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
-          </li>
-        </ul>
-      </article>
-
-      <article class="cdropdown ch2" id="b2" onclick="but2()">
-        <h2>Video Examples</h2>
-        <ul>
-          <li><a href="beispiele/navlet/">Unterschied nav und let</a></li>
-          <li><a href="beispiele/functions/">Functions</a></li>
-          <li><a href="programms/counter/">Counter</a></li>
-          <li><a href="beispiele/fibonacci/">Fibonacci</a></li>
-        </ul>
-      </article>
-      <article class="cdropdown ch2" id="b3" onclick="but3()">
-        <h2>Programms</h2>
-        <ul>
-          <li><a href="programms/counter/">Counter</a></li>
-          <li><a href="programms/rechner/">Calculator</a></li>
-          <li><a href="programms/winupdate">Windows Update</a></li>
-        </ul>
-      </article>
-    </main>
-    <footer>
-      <div class="footer-l-div">
-        <div class="social">
-          <p>Social</p>
-          <a href="https://github.com/Talk2Studios/" target="_blank"
-            ><img src="assets/github.png" alt="github"
-          /></a>
-          <a
-            href="https://www.youtube.com/channel/UCoif-_aktkxpc9-vPHEKAVw"
-            target="_blank"
-            ><img src="assets/youtube.png" alt="youtube"
-          /></a>
-        </div>
-        <p class="lbundig">
-          If you have any ideas or <br />suggestions on how we<br />
-          can improve the website, <br />
-          please contact us here. &darr;<br /><br /><a
-            href="mailto:Talk2.studios@gmail.com"
-            class="mail"
-            >Talk2.studios@gmail.com</a
-          >
-        </p>
+<body>
+  <header>
+    <h1>Talk2 Studios <a href="assets/../"><img src="assets/icon.png" alt="logo" class="headerlogo2"></a></h1>
+    
+    <nav>
+      <ul class="navigation">
+        <li><a href="/" id="first-border">Home</a></li>
+        <li>
+          <a href="programms/rechner/">Calculator <img src="assets/dropdown.png" class="dropicon"
+              alt="dropdownicon"></a>
+          <ul class="submenu">
+            <li>
+              <a href="programms/rechner/#simplemath">SIMPLE MATH</a>
+              <ul class="subsubmenu">
+                <li><a href="programms/rechner/#addition">addition</a></li>
+                <li><a href="programms/rechner/#">substraction</a></li>
+                <li><a href="programms/rechner/#">division</a></li>
+                <li><a href="programms/rechner/#">multiplication</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="programms/rechner/#arithmetic">ARITMETIC</a>
+              <ul class="subsubmenu">
+                <li><a href="programms/rechner/#phytagoras">phytagoras</a></li>
+                <li><a href="programms/rechner/#fibonacci">fibonacci</a></li>
+                <li><a href="programms/rechner/#proportionality">proportionality</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="programms/rechner/#physic">PHYSIC</a>
+              <ul class="subsubmenu">
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+                <li><a href="#">link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Chat</a></li>
+        <li><a href="aboutus">About us <img src="assets/dropdown.png" class="dropicon" alt="dropdownicon"></a>
+          <ul class="submenu">
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Ziele</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <img src="assets/icon.png" alt="logo" class="headerlogo">
+  </header>
+  <main>
+    <article class="video-article">
+      <h2>Our latest video</h2>
+      <div>
+        <iframe src="https://www.youtube-nocookie.com/embed/mSeVTabMGEA" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </div>
-      <p class="rbundig">
-        &copy; 2022 Talk2 Studios<br />Webdesigne by Colin Heggli
+    </article>
+    <article class="cdropdown ch2" id="b1" onclick="but1()">
+      <!-- input type="button" value="Links for HTML & CSS" class="dropbutton" onclick="dropdown()"> -->
+      <h2>Links for HTML & CSS</h2>
+      <ul>
+        <li>
+          <a href="https://validator.w3.org/#validate_by_input" target="_blank">Validator</a>
+        </li>
+        <li>
+          <a href="https://www.w3schools.com/" target="_blank">w3schools</a>
+        </li>
+        <li>
+          <a href="https://color.adobe.com/" target="_blank">Adobe color</a>
+        </li>
+        <li>
+          <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">Flexbox</a>
+        </li>
+        <li>
+          <a href="https://cssgradient.io/" target="_blank">css gradient</a>
+        </li>
+        <li>
+          <a href="https://chat.openai.com/chat" target="_blank">ChetGPT</a>
+        </li>
+        <li>
+          <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+        </li>
+        <li>
+          <a href="https://codepen.io/erikterwan/pen/EVzeRP">burger menu</a>
+        </li>
+      </ul>
+    </article>
+    <article class="cdropdown ch2" id="b2" onclick="but2()">
+      <h2>Video Examples</h2>
+      <ul>
+        <li><a href="beispiele/navlet/">Unterschied nav und let</a></li>
+        <li><a href="beispiele/functions/">Functions</a></li>
+        <li><a href="programms/counter/">Counter</a></li>
+        <li><a href="beispiele/fibonacci/">Fibonacci</a></li>
+      </ul>
+    </article>
+    <article class="cdropdown ch2" id="b3" onclick="but3()">
+      <h2>Programms</h2>
+      <ul>
+        <li><a href="programms/counter/">Counter</a></li>
+        <li><a href="programms/rechner/">Calculator</a></li>
+        <li><a href="programms/winupdate">Windows Update</a></li>
+      </ul>
+    </article>
+  </main>
+  <footer>
+    <div class="footer-l-div">
+      <div class="social">
+        <p>Social</p>
+        <a href="https://github.com/Talk2Studios/" target="_blank"><img src="assets/github.png" alt="github" /></a>
+        <a href="https://www.youtube.com/channel/UCoif-_aktkxpc9-vPHEKAVw" target="_blank"><img src="assets/youtube.png"
+            alt="youtube" /></a>
+      </div>
+      <p class="lbundig">
+        If you have any ideas or <br />suggestions on how we<br />
+        can improve the website, <br />
+        please contact us here. &darr;<br /><br /><a href="mailto:Talk2.studios@gmail.com"
+          class="mail">Talk2.studios@gmail.com</a>
       </p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+    </div>
+    <p class="rbundig"><img src="assets/icon.png" alt="logo" class="headerlogo"><br>
+      &copy; 2022 Talk2 Studios<br>Webdesigne by Colin Heggli
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>

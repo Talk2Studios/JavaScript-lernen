@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(57, 65, 68);
+  background: #160161;
 }
 
 h1,
@@ -22,7 +22,11 @@ h1 a {
   padding: 20px 0px;
   font-size: 70px;
   text-decoration: none;
-  text-shadow: 0px 2px 10px white;
+}
+
+h1 {
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 h2 {
@@ -30,12 +34,13 @@ h2 {
 }
 
 .ch2 h2:hover {
-  color: #3e0697;
+  color: rgb(22, 1, 97);
+  ;
 }
 
 
 .ch2 {
-  color: #3e0697;
+  color: #210697;
 }
 
 h3 {
@@ -44,7 +49,7 @@ h3 {
 
 main {
   width: 100%;
-  max-width: 1060px;
+  max-width: 1300px;
   border-radius: 10px;
   min-height: 100%;
   display: flex;
@@ -55,45 +60,64 @@ main {
 
 article {
   width: 100%;
-  max-width: 1000px;
   padding: 0 30px;
-  background: rgb(156, 0, 255);
-  background: linear-gradient(147deg,
+  /*background: linear-gradient(147deg,
       rgba(156, 0, 255, 1) 0%,
       rgba(192, 81, 163, 1) 45%,
-      rgba(255, 224, 0, 1) 100%);
+      rgba(255, 224, 0, 1) 100%);*/
+  background: linear-gradient(145deg, rgba(79, 44, 203, 0.7) 0%, rgba(207, 187, 255, 0.7) 100%);
   border-radius: 10px;
   margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  box-shadow: inset 0px 1px 20px white;
+
 }
 
 .theme {
   margin-top: 60px;
 }
+
 .aboutuscont .teamsocial {
   float: right;
   height: 15px;
+  width: auto;
   padding: 0 0 0 5px;
 }
+
 h4 {
   display: flex;
   align-items: center;
 }
+
 header {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 100%;
+  max-width: 1360px;
   background: white;
-  background: rgb(156, 0, 255);
-  background: linear-gradient(147deg,
+  /*background: linear-gradient(147deg,
       rgba(156, 0, 255, 1) 0%,
       rgba(192, 81, 163, 1) 45%,
-      rgba(255, 224, 0, 1) 100%);
+      rgba(255, 224, 0, 1) 100%);*/
+  background: none;
   border-radius: 0 0 10px 10px;
-  box-shadow: 0px 5px 5px rgb(60, 68, 75);
 }
+
+header .headerlogo {
+  height: 50px;
+  padding-right: 30px;
+}
+
+header .headerlogo2 {
+  display: none;
+}
+
+header h1 {
+  padding-left: 30px;
+}
+
 
 iframe {
   padding-bottom: 25px;
@@ -130,15 +154,16 @@ iframe {
 
 .aboutuscont p {
   font-size: 16px;
-  max-width: 800px;
+  max-width: 1200px;
   color: #ffffff;
 }
 
 .aboutuscont img {
-  height: 200px;
+  height: 350px;
   float: left;
-  padding-right: 15px;
+  padding-right: 10px;
 }
+
 .aboutuscont span {
   font-size: 16px;
 }
@@ -146,8 +171,10 @@ iframe {
 footer {
   height: 100%;
   max-height: 300px;
+  width: 100%;
+  max-width: 1300px;
   color: white;
-  background: rgb(45, 50, 53);
+  background: none;
   width: 100%;
   text-align: center;
   border-radius: 10px 10px 0 0;
@@ -172,7 +199,7 @@ footer p {
 }
 
 .footer-l-div {
-  margin-left: 100px;
+  margin-left: 30px;
   display: flex;
   align-items: center;
 }
@@ -186,7 +213,7 @@ footer p {
 
 .rbundig {
   text-align: right;
-  margin-right: 100px;
+  margin-right: 30px;
 }
 
 .lbundig {
@@ -202,8 +229,8 @@ footer img {
 nav {
   display: flex;
   flex-direction: row;
-  background: rgb(45, 50, 53);
-  justify-content: center;
+  background: none;
+  align-items: center;
   border-radius: 0 0 10px 10px;
 }
 
@@ -222,19 +249,14 @@ nav li {
 }
 
 nav li:hover {
-  background: rgb(67, 73, 78);
+  background: rgba(79, 44, 203, 0.7);
 }
 
 nav a {
   color: rgb(255, 255, 255);
   text-decoration: none;
   font-weight: bold;
-  border-right: solid 1px rgb(28, 31, 32);
   padding: 5px 10px;
-}
-
-#first-border {
-  border-left: solid 1px rgb(28, 31, 32);
 }
 
 input {
@@ -257,7 +279,7 @@ input {
 }
 
 .cbutton {
-  background: #3e0697;
+  background: rgb(22, 1, 97);
   border: none;
   padding: 7.5px 20px;
   margin-bottom: 10px;
@@ -267,7 +289,7 @@ input {
 }
 
 .ibutton {
-  background: #3e0697;
+  background: rgb(22, 1, 97);
   border: none;
   padding: 7.5px 20px;
   margin-bottom: 10px;
@@ -277,7 +299,7 @@ input {
 
 .ibutton:hover,
 .cbutton:hover {
-  background: #5d23bb;
+  background: #4423bb;
 }
 
 .rechner {
@@ -297,7 +319,7 @@ form {
 /*dropicon*/
 /*dropicon*/
 /*dropicon*/
-.dropicon {
+nav .dropicon {
   height: 12px;
   width: auto;
   padding-left: 5px;
@@ -333,21 +355,23 @@ nav li ul a {
 }
 
 nav li li {
-  background: rgb(67, 75, 78);
+  background: rgba(79, 44, 203, 0.7);
   width: 100%;
   white-space: nowrap;
 }
 
 .submenu li:hover,
 .subsubmenu li:hover {
-  background: rgb(120, 131, 134);
+  background: rgba(124, 95, 233, 0.7);
 }
 
 .submenu {
   display: none;
   position: absolute;
   left: -5px;
+  top: 35px;
   z-index: 1;
+  width: 100%;
 }
 
 .subsubmenu {
@@ -368,7 +392,7 @@ nav li:hover .submenu {
 
 /* article dropdown */
 .ch2 h2 {
-  color: #5d23bb;
+  color: #b6b6b6;
 }
 
 .cdropdown h2 {
@@ -376,11 +400,7 @@ nav li:hover .submenu {
 }
 
 .cdropdown h2:hover {
-  color: #3e0697;
-}
-
-.ch2 {
-  color: #5d23bb;
+  color: rgb(22, 1, 97);
 }
 
 .cdropdown {
@@ -442,10 +462,32 @@ article li a {
 }
 
 article li a:hover {
-  background: rgba(255, 255, 255);
+  background: rgba(255, 255, 255, 0.7);
   border-radius: 5px;
-  color: #3e0697;
-  box-shadow: 0px 1px 20px white;
+  color: rgb(22, 1, 100);
+}
+
+@media screen and (max-width: 1500px) {
+  article {
+    max-width: 1000px;
+  }
+
+  .aboutuscont p {
+    font-size: 16px;
+    max-width: 900px;
+    color: #ffffff;
+  }
+
+  .aboutuscont img {
+    height: 275px;
+    float: left;
+  }
+
+  header,
+  footer {
+    width: 100%;
+    max-width: 1060px;
+  }
 }
 
 @media screen and (max-width: 1100px) {
@@ -458,9 +500,41 @@ article li a:hover {
   article {
     max-width: 800px;
   }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1060px;
+  }
+
+  footer {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  header .headerlogo {
+    display: none;
+  }
+
+  header .headerlogo2 {
+    display: flex;
+    padding: 0 0 0 10px;
+    height: 70px;
+  }
+
+  h1 {
+    padding: 20px 30px;
+    align-items: center;
+  }
+
+  h1 a {
+    padding: 0;
+    height: 70px;
+  }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 915px) {
   .rechner {
     flex-direction: row;
   }
@@ -470,8 +544,22 @@ article li a:hover {
     max-width: 560px;
   }
 
+  .aboutuscont img {
+    width: 280px;
+    height: auto;
+    float: left;
+  }
+
   h3 {
     font-size: 15px;
+  }
+
+  header h1,
+  h1 {
+    color: white;
+    margin: 0;
+    padding: 15px 0 15px 0;
+    font-size: 55px;
   }
 
   form {
@@ -513,34 +601,32 @@ article li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .rbundig {
     text-align: left;
-    margin-left: 100px;
+    margin-left: 30px;
     margin-right: 0;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 724px) {
   article {
     max-width: 280px;
     width: 100%;
-  }
-
-  h1 {
-    color: white;
-    margin: 0;
-    padding: 15px 0px;
-    font-size: 40px;
   }
 
   .rechner {
     flex-direction: column;
     align-items: center;
   }
-
+nav li a {
+  font-size: 14px;
+}
+h1,header h1 {
+  font-size: 40px;
+}
   footer {
     display: flex;
     flex-direction: column;
@@ -564,8 +650,15 @@ article li a:hover {
     width: 280px;
     height: 155px;
   }
+
   .aboutuscont img {
-    height: 160px;
+    height: auto;
     padding-bottom: 15px;
+  }
+
+  .theme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 }
