@@ -7,16 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fibonacci</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/addstyle.css">
 </head>
 
 <body>
     <main>
-        <input type="text" id="sequence">
-        <input type="button" id="button" value="Ausrechnen" onclick="calculate()">
-        <p>Result: <span id="result"></span></p>
-        <script src="script.js"></script>
+        <div class="oinhalt rechner">
+            <h1>fibonacci</h1>
+            <input type="text" id="sequence">
+            <input type="button" id="button" value="Ausrechnen" onclick="calculate()">
+            <p>Result: <span id="result"></span></p>
+        </div>
+        <div id="back2studios">
+            <a href="/"><img src="/assets/icon.png" alt="logo">back to Talk2 Studios</a>
+        </div>
     </main>
-
+    <footer id="footerin"></footer>
+    <script src="/footer.js"></script>
+    <script src="script.js"></script>
+    
 </body>
 
 </html>

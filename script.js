@@ -1,3 +1,4 @@
+window.onload = autewr()
 //var drop = document.getElementById("b1").addEventListener("click", dropd("b1"));
 
 /*function dropd(button){
@@ -37,6 +38,10 @@ function but2() {
 }
 function but3() {
     var element = document.getElementById("b3");
+    element.classList.toggle("cdropdown");
+}
+function but4() {
+    var element = document.getElementById("b4");
     element.classList.toggle("cdropdown");
 }
 //autotextwrite --------------------------------------------------------------------------------------------------------------------
@@ -114,7 +119,7 @@ function bautewr7b() {
                             function bautewrb() {
                                 batwin = "|"
                                 document.getElementById("atw-input").innerHTML = batwin
-                                setTimeout(dautewr, 500)
+                                setTimeout(dautewr, 300)
                             }
                         }
                     }
@@ -216,7 +221,7 @@ function dautewr9b() {
                                     function dautewrb() {
                                         datwin = "|"
                                         document.getElementById("atw-input").innerHTML = datwin
-                                        setTimeout(cautewr, 500)
+                                        setTimeout(cautewr, 1500)
                                     }
                                 }
                             }
@@ -254,13 +259,18 @@ function cautewr() {
                         document.getElementById("atw-input").innerHTML = catwin
                         setTimeout(cautewr7, 100)
                         function cautewr7() {
-                            catwin = "Copmany|"
+                            catwin = "Copmani|"
                             document.getElementById("atw-input").innerHTML = catwin
                             setTimeout(cautewr8, 100)
                             function cautewr8() {
-                                catwin = "Companys|"
+                                catwin = "Companie|"
                                 document.getElementById("atw-input").innerHTML = catwin
-                                setTimeout(cautewr7b, 3000)
+                                setTimeout(cautewr8, 100)
+                                function cautewr8() {
+                                    catwin = "Companies|"
+                                    document.getElementById("atw-input").innerHTML = catwin
+                                    setTimeout(cautewr8b, 3000)
+                                }
                             }
                         }
                     }
@@ -270,38 +280,43 @@ function cautewr() {
     }
 }
 //Companys back ---------------------------------------------------------
-function cautewr7b() {
-    catwin = "Company|"
+function cautewr8b() {
+    catwin = "Companie"
     document.getElementById("atw-input").innerHTML = catwin
-    setTimeout(cautewr6b, 100)
-    function cautewr6b() {
-        catwin = "Compan|"
+    setTimeout(cautewr7b, 100)
+    function cautewr7b() {
+        catwin = "Compani|"
         document.getElementById("atw-input").innerHTML = catwin
-        setTimeout(cautewr5b, 100)
-        function cautewr5b() {
-            catwin = "Compa|"
+        setTimeout(cautewr6b, 100)
+        function cautewr6b() {
+            catwin = "Compan|"
             document.getElementById("atw-input").innerHTML = catwin
-            setTimeout(cautewr4b, 100)
-            function cautewr4b() {
-                catwin = "Comp|"
+            setTimeout(cautewr5b, 100)
+            function cautewr5b() {
+                catwin = "Compa|"
                 document.getElementById("atw-input").innerHTML = catwin
-                setTimeout(cautewr3b, 100)
-                function cautewr3b() {
-                    catwin = "Com|"
+                setTimeout(cautewr4b, 100)
+                function cautewr4b() {
+                    catwin = "Comp|"
                     document.getElementById("atw-input").innerHTML = catwin
-                    setTimeout(cautewr2b, 100)
-                    function cautewr2b() {
-                        catwin = "Co|"
+                    setTimeout(cautewr3b, 100)
+                    function cautewr3b() {
+                        catwin = "Com|"
                         document.getElementById("atw-input").innerHTML = catwin
-                        setTimeout(cautewr1b, 100)
-                        function cautewr1b() {
-                            catwin = "C|"
+                        setTimeout(cautewr2b, 100)
+                        function cautewr2b() {
+                            catwin = "Co|"
                             document.getElementById("atw-input").innerHTML = catwin
-                            setTimeout(cautewrb, 100)
-                            function cautewrb() {
-                                catwin = "|"
+                            setTimeout(cautewr1b, 100)
+                            function cautewr1b() {
+                                catwin = "C|"
                                 document.getElementById("atw-input").innerHTML = catwin
-                                setTimeout(sautewr, 500)
+                                setTimeout(cautewrb, 100)
+                                function cautewrb() {
+                                    catwin = "|"
+                                    document.getElementById("atw-input").innerHTML = catwin
+                                    setTimeout(sautewr, 1200)
+                                }
                             }
                         }
                     }
@@ -384,7 +399,7 @@ function sautewr7b() {
                             function sautewrb() {
                                 satwin = "|"
                                 document.getElementById("atw-input").innerHTML = satwin
-                                setTimeout(autewr, 500)
+                                setTimeout(autewr, 600)
                             }
                         }
                     }

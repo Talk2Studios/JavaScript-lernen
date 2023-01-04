@@ -12,6 +12,7 @@ body {
   flex-direction: column;
   align-items: center;
   background: #160161;
+  background: radial-gradient(circle, #26069b 0%, #160161 100%);
 }
 
 h1 a {
@@ -27,6 +28,16 @@ h1 {
   padding: 20px 0px;
   font-size: 40px;
   text-decoration: none;
+}
+
+.current {
+  border-bottom: rgb(202, 163, 255) solid 1px;
+  transition: 0.1s;
+}
+
+.current:hover {
+  border-bottom: rgb(202, 163, 255) solid 3px;
+  
 }
 
 h1 {
@@ -51,6 +62,29 @@ h2 {
 
 h3 {
   margin-top: 10px;
+}
+
+.comsoon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.comsoon p {
+  font-size: 90px;
+  padding: 0 0 30px 0;
+  margin: 0;
+  color: #ffffff;
+}
+
+.comsoon a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.comsoon a:hover {
+  text-decoration: underline;
 }
 
 main {
@@ -175,7 +209,7 @@ iframe {
 .aboutuscont img {
   height: 350px;
   float: left;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 
 .aboutuscont span {
@@ -290,10 +324,11 @@ nav li {
   float: left;
   position: relative;
   margin: 0 10px;
+  transition: 0.1s;
 }
 
 nav li:hover a {
-  color: rgb(193, 167, 251, 0.7);
+  color: rgb(202, 163, 255);
 }
 
 nav li li {
@@ -410,15 +445,23 @@ article .dropicon {
   }
 }
 
-nav li:hover .dropicon,
-article .dropicon {
+nav li:hover .dropicon {
+  animation: dropiconrotate 0.3s 1;
+  animation-fill-mode: forwards;
+}
+
+.cdropdown h2:hover .dropicon {
   animation: dropiconrotate 0.3s 1;
   animation-fill-mode: forwards;
 }
 
 .cdropdown h2 .dropicon {
+  rotate: 0deg;
+}
+
+article h2 .dropicon {
   rotate: 180deg;
-  padding-left: 5px !important;
+  padding: 0 5px !important;
 }
 
 /*dropdown*/
@@ -441,7 +484,7 @@ nav li li {
 }
 
 .submenu li:hover a {
-  color: rgb(142, 117, 205);
+  color: rgb(202, 163, 255);
 }
 
 .submenu li:hover li a {
@@ -453,11 +496,11 @@ nav li li {
 }
 
 nav li:hover a {
-  color: rgb(142, 117, 205);
+  color: rgb(202, 163, 255);
 }
 
 .submenu li .subsubmenu li:hover a {
-  color: rgb(142, 117, 205);
+  color: rgb(202, 163, 255);
 }
 
 .submenu {
@@ -498,6 +541,7 @@ nav li:hover .submenu {
 
 .cdropdown h2:hover {
   color: rgb(22, 1, 97);
+  cursor: pointer;
 }
 
 .cdropdown {
@@ -649,11 +693,13 @@ article li a:hover {
   .video-article h2 {
     font-size: 22px;
   }
+
   article .dropicon {
     height: 16px;
     width: auto;
     padding-left: 5px;
   }
+
   .aboutuscont img {
     width: 280px;
     height: auto;

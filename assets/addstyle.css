@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend&display=swap");
+
+html,
+body {
+  height: 100%;
+  font-family: "Lexend", sans-serif;
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: #160161;
+  background: radial-gradient(circle, #26069b 0%, #160161 100%);
+  color: white;
+}
+
+#back2studios a {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#back2studios a:hover {
+  text-decoration: underline;
+}
+
+#back2studios img {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  height: 100%;
+  max-height: 300px;
+  width: 100%;
+  color: white;
+  background: none;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  align-items: flex-end;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+.mail {
+  color: white;
+  text-decoration: none;
+}
+
+.mail:hover {
+  text-decoration: underline;
+}
+
+.footer-l-div {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.rbundig {
+  text-align: right;
+  margin-right: 30px;
+}
+
+.lbundig {
+  text-align: left;
+}
+
+footer img {
+  height: 30px;
+  width: auto;
+  margin: 5px 0;
+}
+.oinhalt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (max-width: 724px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rbundig {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .footer-l-div {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+  }
+}

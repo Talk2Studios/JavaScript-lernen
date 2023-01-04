@@ -12,13 +12,16 @@
 
 <body>
     <header>
-        <h1 id="title">Talk2 Studios <a href="assets/../"><img src="../../assets/icon.png" alt="logo" class="headerlogo"></a></h1>
+        <div class="titlecon">
+            <h1 id="title">Talk2 Studios <a href="/"><img src="../../assets/icon.png" alt="logo" class="headerlogo"></a>
+            </h1>
+        </div>
         <nav>
             <ul class="navigation">
                 <li><a href="/" id="first-border">Home</a></li>
                 <li>
-                    <a href="../rechner/">Calculator <img src="../../assets/dropdown.png" class="dropicon"
-                            alt="dropdownicon"></a>
+                    <a href="../rechner/" class="current">Calculator <img src="../../assets/dropdown.png"
+                            class="dropicon" alt="dropdownicon"></a>
                     <ul class="submenu">
                         <li>
                             <a href="#simplemath">SIMPLE MATH</a>
@@ -50,10 +53,10 @@
                 <li><a href="../../aboutus/">About us <img src="../../assets/dropdown.png" class="dropicon"
                             alt="dropdownicon"></a>
                     <ul class="submenu">
-                        <li><a href="#">Team</a></li>
+                        <li><a href="../../aboutus/#team">Team</a></li>
                         <li><a href="#">Ziele</a></li>
                     </ul>
-                <li id="chat-link"><a href="#">Chat</a></li>
+                <li id="chat-link"><a href="../../chat/">Chat</a></li>
                 </li>
             </ul>
         </nav>
@@ -63,7 +66,7 @@
         <div class="atw">
             <p class="name-ov-atw">Talk2 Studios</p>
             <p>Calculator</p>
-          </div>
+        </div>
         <article class="theme">
             <h1 id="simplmathe">SIMPLE MATH</h1>
         </article>
@@ -177,26 +180,10 @@
         </article>
 
     </main>
-    <script src="script.js"></script>
-    <footer>
-        <div class="footer-l-div">
-            <div class="social">
-                <p>Social</p>
-                <a href="https://github.com/Talk2Studios/" target="_blank"><img src="../../assets/github.png"
-                        alt="github"></a>
-                <a href="https://www.youtube.com/channel/UCoif-_aktkxpc9-vPHEKAVw" target="_blank"><img
-                        src="../../assets/youtube.png" alt="youtube"></a>
-            </div>
-            <p class="lbundig">
-                If you have any ideas or <br>suggestions on how we<br> can improve the website, <br> please contact us
-                here. &darr;<br><br><a href="mailto:Talk2.studios@gmail.com" class="mail">Talk2.studios@gmail.com</a>
-            </p>
-        </div>
-        <p class="rbundig"><img src="../../assets/icon.png" alt="logo" class="headerlogo"><br>
-            &copy; 2023 Talk2 Studios<br>Webdesigne by Colin Heggli
-        </p>
+    <footer id="footerin">
     </footer>
-
+    <script src="/footer.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
